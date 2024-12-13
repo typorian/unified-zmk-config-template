@@ -125,7 +125,7 @@
 //                     | LCTRL| GUI  | mo_1 |  BSPC   |   DEL   |  |thctrlret|  SPCFN  | TAB  | BSPC  | R-ALT |
 			bindings = <
 	&gresc   &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                                                &kp F6 &kp F7  &kp F8     &kp F9   &kp F10    &kp F11
-	&kp TAB   &kp A &kp S &kp D &p F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LALT &kp C_PP        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                 &kp LCTRL &kp LGUI &mo MODIFIER &kp BSPC &kp DEL        &mt LCTRL RET  &lt SPACEFN SPACE &kp TAB &kp BSPC &kp RALT
 			>;
