@@ -33,19 +33,19 @@
     my_wasd_loop: my_wasd_loop {
       compatible = "zmk,behavior-macro";
       bindings = <
-        &macro_press &kp W,  // Press and hold W
-        &macro_wait 500,     // Wait for 0.5 seconds
-        &macro_release &kp W, // Release W
-        &macro_press &kp A,  // Press and hold A
-        &macro_wait 500,     // Wait for 0.5 seconds
-        &macro_release &kp A, // Release A
-        &macro_press &kp S,  // Press and hold S
-        &macro_wait 500,     // Wait for 0.5 seconds
-        &macro_release &kp S, // Release S
-        &macro_press &kp D,  // Press and hold D
-        &macro_wait 500,     // Wait for 0.5 seconds
-        &macro_release &kp D, // Release D
-      >;
+        &macro_press &kp W>,  // Press and hold W
+        <&macro_wait 500>,     // Wait for 0.5 seconds
+        <&macro_release &kp W>, // Release W
+        <&macro_press &kp A>,  // Press and hold A
+        <&macro_wait 500>,     // Wait for 0.5 seconds
+        <&macro_release &kp A>, // Release A
+        <&macro_press &kp S>,  // Press and hold S
+        <&macro_wait 500>,     // Wait for 0.5 seconds
+        <&macro_release &kp S>, // Release S
+        <&macro_press &kp D>,  // Press and hold D
+        <&macro_wait 500>,     // Wait for 0.5 seconds
+        <&macro_release &kp D> // Release D
+      ;
     };
   };
 };
