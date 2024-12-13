@@ -46,7 +46,7 @@
         <&macro_release &kp S>, // Release S
         <&macro_press &kp D>,  // Press and hold D
         <&macro_wait_time 500>,     // Wait for 0.5 seconds
-        <&macro_release &kp D>, // Release D
+        <&macro_release &kp D> // Release D
 	  ;
     };
   };
