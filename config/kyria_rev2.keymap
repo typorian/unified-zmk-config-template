@@ -46,7 +46,7 @@
         <&macro_release &kp S>, // Release S
         <&macro_press &kp D>,  // Press and hold D
         <&macro_wait_time 500>,     // Wait for 0.5 seconds
-        <&macro_release &kp D> // Release D
+        <&macro_release &kp D>, // Release D
 	  ;
     };
   };
@@ -65,7 +65,7 @@
 			bindings = <
 	&gresc   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LALT &kp C_PP        &my_wasd_loop &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LALT &kp C_PP        &kt my_wasd_loop &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                 &kp LCTRL &kp LGUI &mo MODIFIER &kp BSPC &mt RCTRL DEL        &mt LCTRL RET  &lt SPACEFN SPACE &kp RALT &kp BSPC &kp RCTRL
 			>;
 
@@ -119,18 +119,17 @@
 		fkeys_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  ESC  |  F1 |  F2 |  F3  |  F4  |  F5  |                                          |  F6  |  F7   |  F8   |  F9  |   F10 |  F11 |
-// |  TAB  |  A  |  S  |  D   |fnite |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
+// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L ALT   |playpause|  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | SHIFT|
 //                     | LCTRL| GUI  | mo_1 |  BSPC   |   DEL   |  |thctrlret|  SPCFN  | TAB  | BSPC  | R-ALT |
 			bindings = <
 	&gresc   &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                                                &kp F6 &kp F7  &kp F8     &kp F9   &kp F10    &kp F11
-	&kp TAB   &kp A &kp S &kp D &my_wasd_loop &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&kp TAB   &kp A &kp S &kp D &p F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LALT &kp C_PP        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                 &kp LCTRL &kp LGUI &mo MODIFIER &kp BSPC &kp DEL        &mt LCTRL RET  &lt SPACEFN SPACE &kp TAB &kp BSPC &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-			bindings = <&my_wasd_loop>;
 		};
 		maintenance_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
