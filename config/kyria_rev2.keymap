@@ -32,7 +32,7 @@
   macros {
     my_wasd_loop: my_wasd_loop {
       compatible = "zmk,behavior-macro";
-	  #binding-cells = ;  // No parameters needed in this case
+	  #binding-cells = <0>;  // No parameters needed in this case
       bindings = <
         &macro_press &kp W>,  // Press and hold W
         <&macro_wait_time 500>,     // Wait for 0.5 seconds
