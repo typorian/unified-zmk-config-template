@@ -60,12 +60,12 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L ALT   |playpause|  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | SHIFT|
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L ALT   |playpause|  | fnite | L SHIFT |  N   |  M    |  ,    |  .   |   /   | SHIFT|
 //                     | LCTRL| GUI  | mo_1 |  BSPC   |  DEL/ctrl  |  |thctrlret|  SPCFN  | altgr | BSPC  | R-CTRL |
 			bindings = <
 	&gresc   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LALT &kp C_PP        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LALT &kp C_PP        &my_wasd_loop &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                 &kp LCTRL &kp LGUI &mo MODIFIER &kp BSPC &mt RCTRL DEL        &mt LCTRL RET  &lt SPACEFN SPACE &kp RALT &kp BSPC &kp RCTRL
 			>;
 
