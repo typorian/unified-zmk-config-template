@@ -27,16 +27,15 @@
 	    keep-mods = <(MOD_LSFT)>;
         };
     };
-};
-/ {
+
   macros {
     my_wasd_loop: my_wasd_loop {
       compatible = "zmk,behavior-macro";
 	  wait-ms = <2>;
 	  tap-ms = <0>;
 	  #binding-cells = <0>;  // No parameters needed in this case
-      bindings = <
-        &macro_press &kp W>,  // Press and hold W
+      bindings = 
+        <&macro_press &kp W>,  // Press and hold W
         <&macro_wait_time 500>,     // Wait for 0.5 seconds
         <&macro_release &kp W>, // Release W
         <&macro_press &kp A>,  // Press and hold A
