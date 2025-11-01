@@ -15,6 +15,7 @@
 #define NUMPAD 3
 #define FKEYS 4
 #define MAINTENANCE 5
+#define GAMING 6
 
 / {
     behaviors {
@@ -141,8 +142,23 @@
 			bindings = <
 	&tog MAINTENANCE   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR        &kp KP_NLCK &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp N0 &kp BSLH
 	&kp TAB   &bt BT_CLR &bootloader &kp D &kp F &kp G                                      &kp H &kp KP_N4  &kp KP_N5    &kp KP_N6   &kp SEMI &kp SQT
-	&kp LSHFT &studio_unlock &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp KP_N1  &kp KP_N2 &kp KP_N3 &kp FSLH &kp RCTRL
+	&kp LSHFT &studio_unlock &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &tog GAMING &kp LSHFT &kp N &kp KP_N1  &kp KP_N2 &kp KP_N3 &kp FSLH &kp RCTRL
 	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp KP_N0 &kp BSPC &kp RALT
+			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};
+		gaming_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
+// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L ALT   |playpause|  | fkeys | L SHIFT |  N   |  M    |  ,    |  .   |   /   | SHIFT|
+//                     | LCTRL| GUI  | mo_1 |  BSPC   |  DEL/ctrl  |  |thctrlret|  SPCFN  | altgr | BSPC  | R-CTRL |
+			bindings = <
+	&gresc   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LALT &kp C_PP        &mo FKEYS &tog GAMING &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+	                 &kp LCTRL &kp LGUI &mo MODIFIER &kp SPACE &mt RCTRL DEL        &mt LCTRL RET  &lt SPACEFN SPACE &kp RALT &kp BSPC &kp RCTRL
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
